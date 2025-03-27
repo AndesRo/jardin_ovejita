@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Jardín de la Ovejita</title>
+    <meta name="description" content="Contáctanos para consultas, pedidos especiales o asesoría en cuidado de suculentas. Estamos aquí para ayudarte.">
+    <!-- Enlaces CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <div class="logo-text">
+                        <span class="main-title">Jardín de la Ovejita</span>
+                        <span class="subtitle">Cultivando conexiones</span> <!-- Subtítulo único -->
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="acerca-de.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+  <!-- Hero Contacto -->
+<section class="about-hero text-dark py-5">
+    <div class="container text-center" data-aos="zoom-in">
+        <h1 class="display-4 fw-bold mb-4">Aqui Atendemos todas tus consultas</h1>
+        <p class="lead">Respondemos en menos de 24 horas</p>
+    </div>
+</section>
+    <!-- Sección de Contacto -->
+    <main class="contact-main py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Formulario -->
+                <div class="col-lg-6" data-aos="fade-right">
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="mb-4">
+                            <label for="nombre" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                            <div class="invalid-feedback">Por favor ingresa tu nombre</div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Ingresa un email válido</div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="telefono" class="form-label">Teléfono (opcional)</label>
+                            <input type="tel" class="form-control" id="telefono">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="asunto" class="form-label">Asunto</label>
+                            <select class="form-select" id="asunto" required>
+                                <option value="">Selecciona un tema</option>
+                                <option>Consulta general</option>
+                                <option>Pedido especial</option>
+                                <option>Cotizacion</option>
+                            </select>
+                            <div class="invalid-feedback">Selecciona un asunto</div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                            <div class="invalid-feedback">Escribe tu mensaje</div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg w-100">
+                            <span class="submit-text">Enviar mensaje</span>
+                            <div class="spinner-border spinner-border-sm d-none" role="status"></div>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Info Contacto -->
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="contact-info">
+                        <div class="info-card mb-4">
+                            <div class="icon-box bg-primary">
+                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Visítanos</h4>
+                                <p class="mb-0">San Guillermo 1765<br>Región de la Araucania, Chile</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card mb-4">
+                            <div class="icon-box bg-primary">
+                                <i class="fas fa-phone fa-2x"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Llámanos</h4>
+                                <p class="mb-0">
+                                    <a href="https://wa.me/56987654321" target="_blank" class="contact-link">
+                                        +56 9 8765 4321 <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                    <br>Lunes a Viernes: 9:00 - 18:00
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card mb-4">
+                            <div class="icon-box bg-primary">
+                                <i class="fas fa-envelope fa-2x"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Escríbenos</h4>
+                                <p class="mb-0">
+                                    <a href="mailto:contacto@jardinovejita.cl" class="contact-link">
+                                        contacto@jardinovejita.cl <i class="fas fa-envelope"></i>
+                                    </a>
+                                    <br>Soporte 24/7
+                                </p>
+                            </div>
+                        </div>
+                        
+
+                        <div class="map-container ratio ratio-16x9">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2931.007793098799!2d-72.227951!3d-39.275920!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9615f7ea0e2a7f3b%3A0x8b3c61484ea61f79!2sSan%20Guillermo%201765%2C%20Villarrica%2C%20Chile!5e0!3m2!1ses-419!2scl!4v1711385601234!5m2!1ses-419!2scl" 
+                                style="border:0;" allowfullscreen="" loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 text-center">
+        <p>© 2025 Jardín de la Ovejita | Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+
+
+    <!-- EmailJS (reemplazar con tu User ID) -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        // Inicialización
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init();
+            
+            // Configurar EmailJS
+            emailjs.init('TU_USER_ID');
+            
+            // Validación de formulario
+            const form = document.getElementById('contactForm');
+            form.addEventListener('submit', handleSubmit);
+        });
+
+        function handleSubmit(e) {
+            e.preventDefault();
+            
+            const form = e.target;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            
+            if (!form.checkValidity()) {
+                e.stopPropagation();
+                form.classList.add('was-validated');
+                return;
+            }
+            
+            // Mostrar spinner
+            submitBtn.disabled = true;
+            submitBtn.querySelector('.submit-text').classList.add('d-none');
+            submitBtn.querySelector('.spinner-border').classList.remove('d-none');
+            
+            // Enviar email
+            emailjs.sendForm('service_id', 'template_id', form)
+                .then(() => {
+                    showAlert('success', 'Mensaje enviado correctamente');
+                    form.reset();
+                    form.classList.remove('was-validated');
+                })
+                .catch(() => {
+                    showAlert('danger', 'Error al enviar el mensaje');
+                })
+                .finally(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.querySelector('.submit-text').classList.remove('d-none');
+                    submitBtn.querySelector('.spinner-border').classList.add('d-none');
+                });
+        }
+
+        function showAlert(type, message) {
+            const alertDiv = document.createElement('div');
+            alertDiv.className = `alert alert-${type} position-fixed top-0 end-0 m-3`;
+            alertDiv.textContent = message;
+            
+            document.body.appendChild(alertDiv);
+            
+            setTimeout(() => {
+                alertDiv.remove();
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
