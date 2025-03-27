@@ -19,7 +19,7 @@ body {
 
 /* Efecto adicional para secciones */
 .hero-section {
-  padding-top: 120px;  /* Aumentado de 100px a 120px */
+  padding-top: 180px;  /* Aumentado de 100px a 120px */
   margin-top: 0;       /* Eliminamos el margen negativo */
   position: relative;
   z-index: 900;        /* Asegura que el contenido está sobre el header */
@@ -89,6 +89,20 @@ main {
 .navbar-brand img:hover {
   transform: scale(1.05);
 }
+
+.hero-image img {
+  max-width: 60%; /* Reduce el tamaño del logo al 60% del contenedor */
+  height: auto; /* Mantiene la proporción */
+  display: block; /* Evita espacios no deseados */
+  margin: 0 auto; /* Centra la imagen */
+}
+@media (max-width: 768px) {
+  .hero-image img {
+      max-width: 40%; /* Reduce aún más en móviles */
+  }
+}
+
+
 
 
 /*diseño logo header*/
@@ -191,45 +205,97 @@ main {
     margin-bottom: 1rem;
   }
   
-  /* Footer */
+/* Footer Mejorado */
+footer {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: var(--light-color);
+  padding: 3rem 0;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Estilo de enlaces sociales */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--light-color);
+  font-size: 1.4rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  background: var(--accent-color);
+  color: var(--dark-color);
+  transform: scale(1.1);
+}
+
+/* Estilo del Newsletter */
+.newsletter {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.newsletter .form-control {
+  border-radius: 30px 0 0 30px;
+  border: none;
+  padding: 10px 15px;
+}
+
+.newsletter .btn {
+  border-radius: 0 30px 30px 0;
+  background: var(--accent-color);
+  color: var(--dark-color);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.newsletter .btn:hover {
+  background: var(--primary-color);
+  color: var(--light-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
   footer {
-    margin-top: 4rem;
+    padding: 2rem 1rem;
   }
   
+  .hero-section {
+    padding: 3rem 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+  
+  .product-card {
+    margin-bottom: 2rem;
+  }
+
   .social-links a {
-    transition: opacity 0.3s;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
   }
-  
-  .social-links a:hover {
-    opacity: 0.8;
-  }
-  
-  .newsletter .form-control {
-    border-radius: 50px 0 0 50px;
-  }
-  
-  .newsletter .btn {
-    border-radius: 0 50px 50px 0;
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    body {
-      padding-top: 70px;
-    }
-    
-    .hero-section {
-      padding: 2rem 0;
-    }
-    
-    .hero-section h1 {
-      font-size: 2rem;
-    }
-    
-    .product-card {
-      margin-bottom: 1.5rem;
-    }
-  }
+}
 
 
 /*----------------------------------------------------------------------------------------------------------*/
@@ -712,6 +778,7 @@ main {
 .whatsapp-link i {
   margin-right: 5px;
 }
+
 
 
 /* En tu archivo main.css - Agrega esto */
